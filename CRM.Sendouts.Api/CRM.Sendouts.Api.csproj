@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <OutputType>WinExe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CRM.Sendouts.Domain\CRM.Sendouts.Domain.csproj" />
+      <ProjectReference Include="..\CRM.Sendouts.Infrastructure\CRM.Sendouts.Infrastructure.csproj" />
+      <ProjectReference Include="..\CRM.Sendouts.Projections\CRM.Sendouts.Projections.csproj" />
+    </ItemGroup>
+
+</Project>

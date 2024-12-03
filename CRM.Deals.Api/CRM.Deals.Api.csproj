@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CRM.Deals.Domain\CRM.Deals.Domain.csproj" />
+      <ProjectReference Include="..\CRM.Deals.Infrastructure\CRM.Deals.Infrastructure.csproj" />
+      <ProjectReference Include="..\CRM.Deals.Projections\CRM.Deals.Projections.csproj" />
+    </ItemGroup>
+
+</Project>
